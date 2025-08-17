@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: payments=536285030344.dkr.ecr.ap-south-1.amazonaws.com/users
     argocd-image-updater.argoproj.io/payments.update-strategy: semver
+    argocd-image-updater.argoproj.io/users.ignore-tags: '*'
     argocd-image-updater.argoproj.io/write-back-method: git
   finalizers:
   - resources-finalizer.argocd.argoproj.io
